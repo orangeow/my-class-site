@@ -1,0 +1,51 @@
+h1 {
+    font-family: futura;
+    text-align:center;
+}
+h2{
+    font-family:futura;
+}
+
+a{
+    font-family:futura;
+    color:white;
+    font-size: 45px;
+}
+
+body{
+    background-color: #ffcc33;
+}
+
+img{
+    width: 400px;
+}
+.center-text{
+    text-align:center;
+}
+.center-images{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+iframe{
+    width:560px; 
+    height:315px;
+}
+
+.options{
+    align-content:center;
+    position:fixed;
+    left:20%
+}
+
+.result-background{
+    background-image:url("result-background.png");
+    background-size:contain;
+}
+
+#start{
+    background-color:red;
+    margin-left:35%;
+    margin-right:35%;
+}
