@@ -1,0 +1,49 @@
+#title{
+    display:block;
+    font-family: "ff-providence-sans-web-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal; 
+    font-size:72px;
+    margin:auto;
+    text-align:center;
+}
+
+.sections{
+    display:inline-block;
+    font-family: "ff-providence-sans-web-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    color:red;
+    background-color:paleturquoise;
+    display:inline-block;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:220px;
+}
+
+.assignment-links{
+    font-family: "ff-providence-sans-web-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+    color:gray;
+    background-color:yellow;
+    display:inline-block;
+    margin-top:2px;
+    margin-left:250px;
+}
+
+body{
+    background-color:rgb(250, 241, 215);
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+    background-image:url(background-01.png);
+    background-size:cover;
+    background-repeat:repeat-y;
+}
