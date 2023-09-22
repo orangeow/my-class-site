@@ -35,8 +35,10 @@ iframe{
 
 .options{
     align-content:center;
-    position:fixed;
-    left:20%
+    position:absolute;
+    display:inline-block;
+    left:20%;
+    
 }
 
 .result-background{
@@ -48,4 +50,10 @@ iframe{
     background-color:red;
     margin-left:35%;
     margin-right:35%;
+}
+
+.new-center{
+    display:block;
+    position:relative;
+    left: calc(50% - 200px);
 }
