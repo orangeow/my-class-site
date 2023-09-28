@@ -1,0 +1,225 @@
+/* Version 2: Full Width and Typographic */
+
+.container {
+/* This makes the container full width */
+    width: 100%;
+    height:1080px;
+}
+
+.hidden-stars{
+  display:none;
+  width:100%;
+  height:1080px;
+  position:fixed;
+}
+
+body{
+    background-image:linear-gradient(rgb(255, 111, 9),rgb(255, 152, 9));
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.main-info{
+  position:fixed;
+  margin:auto;
+  /* border:1px solid black; */
+  width:66vw;
+  left:calc(50% - 33vw);
+  top:2vw;
+  /* left: 20%; */
+}
+.title{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic; */
+    /* font-size: 110px; */
+    font-size:8vw;
+    text-transform:uppercase;
+
+    letter-spacing:1vw;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:70%;
+    padding:0px;
+    margin:0px;
+  }
+  
+  .subtitle{
+    display:block;
+
+    font-family: itc-slimbach, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 22px;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:60%;
+    margin:0px;
+  
+  }
+  
+  .author{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic;  */
+    text-transform:uppercase;
+    font-size: 80px;
+    position:relative;
+
+    letter-spacing:1vw;
+
+    margin:0px;
+    text-align:center;
+    color:whitesmoke;
+    opacity:65%;
+
+  }
+  .details{
+    font-family: itc-slimbach, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
+    position:fixed;
+    margin:10px;
+    text-align:left;
+    color:whitesmoke;
+    opacity:55%;
+    line-height: 0.35;
+    bottom:50px;
+  }
+  
+  .date{
+    font-size:22px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .illustration{
+    position:relative;
+    top:40%;
+  }
+
+  .hill{
+    width:100%;
+    height:700px;
+    border-radius: 50% 50% 0% 0%;
+    background-color:rgb(255, 98, 0);
+    position:absolute;
+    margin:auto;
+
+  }
+      
+  .house-container{
+    position:relative;
+    width:100px;
+    height:100px;
+    margin:auto;
+    top:-70px;
+    /* bottom:790px; */
+
+  }
+  .house{
+    width:80px;
+    height:40px;
+    background-color:rgb(232, 207, 168);
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    border-radius:5%;
+  }
+  
+  .door{
+    width:10px;
+    height:20px;
+    background-color:darkseagreen;
+    position:absolute;
+    bottom:0px;
+    left:52px;
+  }
+  
+  .window{
+    width:10px;
+    height:10px;
+    background-color:rgb(104, 138, 104);
+    position:absolute;
+  }
+  
+  #window-1{
+    top:75px;
+    left:25px;
+    width:15px;
+  }
+  
+  #window-2{
+    top:75px;
+    left:70px;
+  }
+  
+  .roof{
+    width:84px;
+    height:30px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+    top:35px;
+    left:8px;
+    border-radius:5%;
+  }
+  
+  .chimney{
+    width:10px;
+    height:13px;
+    top:22px;
+    left:65px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+  }
+  
+  .border{
+    display:none;
+  }
+
+  /*Hover effects*/
+
+body:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 40, 106));
+  }
+  body:hover .hidden-stars{
+    display:block;
+  }
+
+  .hill:hover{
+    background-image:url("Eyes-01.png");
+  }
+
+  body:hover .house{
+    filter:invert(70%);
+  }
+
+  body:hover .roof, body:hover .chimney, body:hover .hill{
+    background-color:black;
+  }
+
+  body:hover .window{
+    background-color:rgb(17, 16, 14);
+  }
+
+  body:hover .door{
+    background-color:rgb(104, 138, 104);
+  }
+
+  .house-container:hover .window{
+    background-color:rgb(253, 211, 2);
+ }
+  
