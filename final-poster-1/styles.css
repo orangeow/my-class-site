@@ -1,0 +1,299 @@
+/* Version 2: Full Width and Typographic */
+
+.container {
+/* This makes the container full width */
+    width: 100%;
+    height:1080px;
+}
+
+.hidden-stars{
+  display:none;
+  background-image:url("Stars-01.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100vw;
+  height:1080px;
+  position:fixed;
+}
+
+body{
+    background-image:linear-gradient(rgb(255, 111, 9),rgb(255, 177, 9));
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:1080px;
+}
+
+.main-info{
+  position:fixed;
+  margin:auto;
+  /* border:1px solid black; */
+  width:66vw;
+  left:calc(50% - 33vw);
+  top:2vw;
+  /* left: 20%; */
+}
+.title{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic; */
+    /* font-size: 110px; */
+    font-size:8vw;
+    text-transform:uppercase;
+
+    letter-spacing:1vw;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:70%;
+    padding:0px;
+    margin:0px;
+  }
+  
+  .subtitle{
+    display:block;
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    /* font-family: itc-slimbach, sans-serif;
+    font-weight: 900;
+    font-style: italic; */
+    font-size: 24px;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:60%;
+    margin:0px;
+  
+  }
+  
+  .author{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic;  */
+    text-transform:uppercase;
+    font-size: 80px;
+    position:relative;
+
+    letter-spacing:1vw;
+
+    margin:0px;
+    text-align:center;
+    color:whitesmoke;
+    opacity:65%;
+
+
+  }
+  .details{
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    /* font-family: itc-slimbach, sans-serif;
+    font-weight: 900;
+    font-style: italic; */
+    font-size: 22px;
+    position:fixed;
+    margin:10px;
+    text-align:left;
+    color:whitesmoke;
+    opacity:55%;
+    line-height: 0.35;
+    bottom:50px;
+  }
+  
+  .date{
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .illustration{
+    position:relative;
+    top:500px;
+  }
+
+  .hill{
+    width:100%;
+    height:588px;
+    border-radius: 100% 100% 0% 0%;
+    background-color:rgb(255, 98, 0);
+    position:absolute;
+    margin:auto;
+  }
+
+  .hidden-smoke{
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 100vw solid whitesmoke;
+    opacity: 50%;
+    border-radius: 0 0 200px 200px;
+    position: absolute;
+    left: calc(50% + 20px);
+    transform: translate(-50%);
+    bottom: 148px;
+    display:none;
+  }
+   .hidden-lightning{
+    position:absolute;
+    left:calc(50% - 50px);
+    top:0;
+    display:none;
+   }
+
+   #lightning-top{
+    width:40px;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-top: 250px solid yellow;
+    opacity:50%;
+    bottom:260px;
+    position:absolute;
+    transform:skew(-20deg);
+    left: calc(50% + 40px);
+   }
+
+   #lightning-middle{
+    width:142px;
+    height:15px;
+    border-radius: 0 10px 0 10px;
+    transform:skew(-20deg);
+    background-color:yellow;
+    opacity:50%;
+    position:absolute;
+    bottom:245px;
+    left: calc(50% + 42px);
+    
+   }
+
+   #lightning-bottom{
+    width:5px;
+    height:0;
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-top: 200px solid yellow;
+    opacity:50%;
+    position:absolute;
+    transform:skew(-20deg);
+    bottom: 45px;
+    left:calc(50% + 60px);
+   }
+      
+  .house-container{
+    position:relative;
+    width:100px;
+    height:100px;
+    margin:auto;
+    top:-70px;
+    /* bottom:790px; */
+
+  }
+  .house{
+    width:80px;
+    height:40px;
+    background-color:rgb(232, 207, 168);
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    border-radius:5%;
+  }
+  
+  .door{
+    width:10px;
+    height:20px;
+    background-color:darkseagreen;
+    position:absolute;
+    bottom:0px;
+    left:52px;
+  }
+  
+  .window{
+    width:10px;
+    height:10px;
+    background-color:rgb(104, 138, 104);
+    position:absolute;
+  }
+  
+  #window-1{
+    top:75px;
+    left:25px;
+    width:15px;
+  }
+  
+  #window-2{
+    top:75px;
+    left:70px;
+  }
+  
+  .roof{
+    width:84px;
+    height:30px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+    top:35px;
+    left:8px;
+    border-radius:5%;
+  }
+  
+  .chimney{
+    width:10px;
+    height:13px;
+    top:22px;
+    left:65px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+  }
+  
+  .border{
+    display:none;
+  }
+
+  /*Hover effects*/
+
+body:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 40, 106));
+  }
+  body:hover .hidden-stars{
+    display:block;
+  }
+
+  .hill:hover{
+    background-image:url("Eyes-01.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+
+  body:hover .house{
+    filter:invert(70%);
+  }
+
+  body:hover .roof, body:hover .chimney, body:hover .hill{
+    background-color:black;
+  }
+
+  body:hover .window{
+    background-color:rgb(17, 16, 14);
+  }
+
+  body:hover .door{
+    background-color:rgb(104, 138, 104);
+  }
+
+  .house-container:hover .window{
+    background-color:rgb(253, 211, 2);
+ }
+  
+ .illustration:hover .hidden-lightning{
+    display:block;
+ }

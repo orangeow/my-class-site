@@ -1,0 +1,288 @@
+/* Version 2: Full Width and Typographic */
+
+.container {
+/* This makes the container full width */
+    width: 100%;
+    height:1080px;
+}
+
+.hidden-stars{
+  display:none;
+  background-image:url("Stars-01.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+}
+
+body{
+    background-image:linear-gradient(rgb(64, 100, 79),rgb(198, 223, 202));
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow-x:hidden;
+}
+
+.main-info{
+  position:fixed;
+  margin:auto;
+  /* border:1px solid black; */
+  width:66vw;
+  left:calc(50% - 33vw);
+  top:2vw;
+  /* left: 20%; */
+}
+
+.title{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "itc-slimbach", sans-serif;
+    font-weight: 900;
+    font-style: italic;  */
+    /* font-size: 110px; */
+    font-size:8vw;
+    text-transform:uppercase;
+
+    letter-spacing:1vw;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:70%;
+    padding:0px;
+    margin:0px;
+  }
+  
+  .subtitle{
+    display:block;
+
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:60%;
+    margin:0px;
+  
+  }
+  
+  .author{ 
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "itc-slimbach", sans-serif;
+    font-weight: 900;
+    font-style: italic;  */
+    text-transform:uppercase;
+    font-size: 80px;
+    position:relative;
+
+    letter-spacing:1vw;
+
+    margin:0px;
+    text-align:center;
+    color:whitesmoke;
+    opacity:65%;
+
+  }
+  .details{
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 22px;
+    position:fixed;
+    margin:10px;
+    text-align:left;
+    color:whitesmoke;
+    opacity:55%;
+    line-height: 0.35;
+    bottom:10px;
+  }
+  
+  .date{
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  
+
+  .illustration{
+    position:relative;
+    top:500px; 
+  }
+
+  .hill{
+    width:60vw;
+    height:588px;
+    border-radius: 30vw 30vw 0 0;
+    background-color:rgb(64, 100, 79);
+    position:absolute;
+    left:41vw;
+    overflow:hidden;
+  }
+
+  .hidden-steps{
+    display:block;
+    position:absolute;
+    transform:scale(0.4, 0.4) rotate(-7deg);
+    top:-140px;
+    right:25vw;
+    opacity:0;
+    transition: opacity 2.5s ease-in;
+    
+  }
+
+  .hidden-grave{
+    width:30px;
+    height:40px;
+    border-radius: 50% 50% 0 0;
+    background-color:gray;
+    position:absolute;
+    border-right:2px solid rgb(90, 90, 90);
+    /* filter:drop-shadow(5px red); */
+  }
+
+  .burial{
+    position:absolute;
+    left:27%;
+    top:90%;
+    opacity:0;
+    transition: 300ms;
+  }
+  .blood{
+    background-color:red;
+    width:40px;
+    height:20px;
+    border-radius:50% 50% 50% 100%;
+    top:30px;
+    position:absolute;
+    left:-5px;
+    opacity:0;
+    transition:2s;
+  }
+
+  #hill-position-2{
+    left:10%;
+    top:100%;
+    margin:0px;
+    width:40%;
+    height:418px;
+  }
+  
+
+  .house-container{
+    position:relative;
+    width:100px;
+    height:100px;
+    top:-70px;
+    left:60%;
+    /* bottom:790px; */
+
+  }
+  .house{
+    width:80px;
+    height:40px;
+    background-color:rgb(232, 207, 168);
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    border-radius:5%;
+  }
+  
+  .door{
+    width:10px;
+    height:20px;
+    background-color:darkseagreen;
+    position:absolute;
+    bottom:0px;
+    left:52px;
+  }
+  
+  .window{
+    width:10px;
+    height:10px;
+    background-color:rgb(104, 138, 104);
+    position:absolute;
+  }
+  
+  #window-1{
+    top:75px;
+    left:25px;
+    width:15px;
+  }
+  
+  #window-2{
+    top:75px;
+    left:70px;
+  }
+  
+  .roof{
+    width:84px;
+    height:30px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+    top:35px;
+    left:8px;
+    border-radius:5%;
+  }
+  
+  .chimney{
+    width:10px;
+    height:13px;
+    top:22px;
+    left:65px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+  }
+  
+  .border{
+    display:none;
+  }
+
+  /*Hover effects*/
+
+body:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(170, 0, 48));
+  }
+  body:hover .hidden-stars{
+    display:block;
+  }
+  body:hover .hill{
+    background-color:rgb(17, 16, 14);
+  }
+
+  .hill:hover .hidden-steps{
+    opacity:100%;
+    /* background-image:url("Eyes-01.png"); */
+  }
+
+  body:hover .house{
+    filter:invert(70%);
+  }
+
+  body:hover .roof, body:hover .chimney{
+    background-color:black;
+  }
+
+  body:hover .window{
+    background-color:rgb(17, 16, 14);
+  }
+
+  .house-container:hover .window{
+     background-color:rgb(253, 211, 2);
+  }
+
+  .illustration:hover .burial{
+    opacity:100%;
+  }
+  
+  .burial:hover .blood{
+    opacity:100%;
+  }

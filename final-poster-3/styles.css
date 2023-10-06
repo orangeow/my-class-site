@@ -1,0 +1,394 @@
+/* Version 2: Full Width and Typographic */
+
+.container {
+/* This makes the container full width */
+    width: 100%;
+    height:1080px;
+}
+
+.hidden-stars{
+  opacity:0;
+  background-image:url("Rain-01.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  transition:500ms;
+}
+
+body{
+    background-image:linear-gradient(rgb(47, 64, 75),rgb(146, 179, 202));
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow-x:hidden;
+}
+
+.main-info{
+  position:fixed;
+  margin:auto;
+  /* border:1px solid black; */
+  width:66vw;
+  left:calc(50% - 33vw);
+  top:2vw;
+  /* left: 20%; */
+}
+.title{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic; */
+    /* font-size: 110px; */
+    font-size:8vw;
+    text-transform:uppercase;
+
+    letter-spacing:1vw;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:70%;
+    padding:0px;
+    margin:0px;
+  }
+  
+  .subtitle{
+    display:block;
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    /* font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic; */
+    font-size: 24px;
+
+    position:relative;
+    text-align:center;
+    color:whitesmoke;
+    opacity:60%;
+    margin:0px;
+  
+  }
+  
+  .author{
+    display:block;
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "jaf-facitweb", sans-serif;
+    font-weight: 800;
+    font-style: italic;  */
+    text-transform:uppercase;
+    font-size: 80px;
+    position:relative;
+
+    letter-spacing:1vw;
+
+    margin:0px;
+    text-align:center;
+    color:whitesmoke;
+    opacity:65%;
+
+  }
+  .details{
+    font-family: "komet-sc", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 22px;
+    position:fixed;
+    margin:10px;
+    text-align:right;
+    color:whitesmoke;
+    opacity:55%;
+    line-height: 0.35;
+    bottom:50px;
+    right:0px;
+  }
+  
+  .date{
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .clouds{
+    width:300px;
+    height:200px;
+    position:absolute;
+    transform:scale(1.5, 1);
+    opacity:40%;
+    overflow:hidden;
+  }
+
+  /* #cloud-shadow-1{
+    left:20px;
+    top:120px;
+  }
+
+  #cloud-shadow-2{
+    right:70px;
+    top:50px;
+  }
+
+  .shadow-left-1{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-color:rgb(43, 36, 52);
+    border-radius:100px 150px 0 40px;
+    bottom:0px;
+    display:none;
+  }
+
+  .shadow-right-1{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color:rgb(43, 36, 52);
+    border-radius:150px 100px 100px 0px;
+    left:60%;
+    bottom:0px;
+    display:none;
+  }
+
+  .shadow-left-2{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color:rgb(43, 36, 52);
+    border-radius:150px 100px 0px 100px;
+    bottom:0px;
+    display:none;
+  }
+
+  .shadow-right-2{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-color:rgb(43, 36, 52);
+    border-radius:100px 150px 40px 0;
+    bottom:0px;
+    left:30%;
+    display:none;
+  }  */
+
+  .cloud-left-1{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-color:whitesmoke;
+    border-radius:100px 150px 0 40px;
+    bottom:0px;
+  }
+
+  .cloud-right-1{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color:whitesmoke;
+    border-radius:150px 100px 100px 0px;
+    left:60%;
+    bottom:0px;
+    
+  }
+
+  #cloud-position-1{
+    left:20px;
+    top:120px;
+  }
+
+  .cloud-left-2{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color:whitesmoke;
+    border-radius:150px 100px 0px 100px;
+    bottom:0px;
+    
+  }
+
+  .cloud-right-2{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-color:whitesmoke;
+    border-radius:100px 150px 40px 0;
+    bottom:0px;
+    left:30%;
+    
+  }
+
+  #cloud-position-2{
+    right:70px;
+    top:50px;
+  }
+
+  .cloud-left-3{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-color:rgb(183, 161, 209);
+    border-radius:200px 200px 0 100px;
+    bottom:0px;
+  }
+
+  .cloud-right-3{
+    position:absolute;
+    width: 100px;
+    height:100px;
+    background-color:rgb(183, 161, 209);
+    border-radius:200px 150px 100px 0px;
+    left:60%;
+    bottom:0px;
+  }
+
+  #cloud-position-3{
+    left:820px;
+    top:400px;
+    transform:scale(6, 2);
+    opacity:0;
+    
+    transition: 1.5s ease-in;
+    
+  }
+
+  .illustration{
+    position:relative;
+    top:40%;
+  }
+
+  .hill{
+    width:75%;
+    height:655px;
+    border-radius: 50% 100% 0% 0%;
+    background-color:rgb(47, 64, 75);
+    position:absolute;
+    margin-right:300px;
+    left:-100px;
+  }
+      
+  .house-container{
+    position:relative;
+    width:100px;
+    height:100px;
+    margin:0px;
+    left:15%;
+    bottom:20px;
+
+  }
+  .house{
+    width:80px;
+    height:40px;
+    background-color:rgb(232, 207, 168);
+    position:absolute;
+    bottom:0px;
+    left:10px;
+    border-radius:5%;
+  }
+  
+  .door{
+    width:10px;
+    height:20px;
+    background-color:darkseagreen;
+    position:absolute;
+    bottom:0px;
+    left:52px;
+  }
+  
+  .window{
+    width:10px;
+    height:10px;
+    background-color:rgb(104, 138, 104);
+    position:absolute;
+  }
+  
+  #window-1{
+    top:75px;
+    left:25px;
+    width:15px;
+  }
+  
+  #window-2{
+    top:75px;
+    left:70px;
+  }
+  
+  .roof{
+    width:84px;
+    height:30px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+    top:35px;
+    left:8px;
+    border-radius:5%;
+  }
+  
+  .chimney{
+    width:10px;
+    height:13px;
+    top:22px;
+    left:65px;
+    background-color:rgb(54, 51, 45);
+    position:absolute;
+  }
+  
+  .border{
+    display:none;
+  }
+
+  /*Hover effects*/
+
+body:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(51, 0, 106));
+  }
+  body:hover .hidden-stars{
+    opacity:30%
+  }
+ 
+  body:hover .cloud-left-1, body:hover .cloud-right-1, body:hover .cloud-left-2, body:hover .cloud-right-2{
+    background-color:rgb(64, 54, 77);
+  }
+
+  body:hover  #cloud-position-3{
+    opacity:30%;
+  }
+  /* body:hover .shadow-left-1, body:hover .shadow-left-2, body:hover .shadow-right-1, body:hover .shadow-right-2{
+    display:block;
+    transform:scale(1.02, 1.02);
+  } */
+
+  body:hover .clouds{
+    opacity:100%;
+  }
+
+  /* .hill:hover{
+    background-image:url("Eyes-01.png");
+  } */
+
+  body:hover .house{
+    filter:invert(70%);
+  }
+  body:hover .hill{
+    background-color:rgb(17, 16, 14);
+  }
+  
+  body:hover .roof, body:hover .chimney{
+    background-color:black;
+  }
+
+  body:hover .window{
+    background-color:rgb(17, 16, 14);
+  }
+
+  .house-container:hover .window{
+     background-color:rgb(253, 211, 2);
+  }
+
+  
