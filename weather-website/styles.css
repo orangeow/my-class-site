@@ -1,0 +1,370 @@
+body{
+    background-image:linear-gradient(rgb(220, 235, 255), rgb(14, 131, 249));
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:140vh;
+    width:100vw;
+}
+
+.current-location{
+    position:relative;
+    left:10px;
+    top:10px;
+}
+
+.pin{
+    position:absolute;
+    display:inline-block;
+}
+#pin-bottom{
+    width:0;
+    height:0;
+    border-top:30px solid rgb(223, 84, 24);
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    position:absolute;
+}
+#pin-top{
+    width:20px;
+    height:10px;
+    border-radius:20px 20px 0 0; 
+    background-color:rgb(223, 84, 24);
+    position:absolute;
+    top:-10px;
+}
+.zip{
+    left:30px;
+    display:inline-block;
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:20pt;
+    color:rgb(72, 72, 72);
+    position:absolute;
+    top:-30px;
+}
+
+.search-location{
+    width:200px;
+    height:50px;
+    border-radius:25px;
+    background-color:whitesmoke;
+    /* text-align:center; */
+    position:relative;
+    left:calc(100vw - 220px);
+}
+
+#search{
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size:14pt;
+    color:rgb(72, 72, 72);
+    position:absolute;
+    left:60px;
+    top: calc(25px - 14pt);
+    transform:translate(-50%, -50%);
+}
+
+.current-weather{
+    position:relative;
+    top:5vh;
+    left:calc(50% - 20vw);
+    
+    width:40vw;
+    height:30vw;
+}
+
+.now-temp{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    /* border:1px solid black; */
+}
+
+h1{
+    font-family: "brevia", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:4vw;
+    color:whitesmoke;
+    text-align:center;
+}
+
+.sunny{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    border-radius:50%;
+    background-color:rgb(255, 208, 0);
+    left:calc(50% - 12.5vw);
+    top:calc(50% - 12.5vw);
+}
+
+    .ray{
+        position:absolute;
+        width:5vw;
+        height:5vw;
+        border-left:10px solid rgb(255, 224, 23);
+        border-radius:2px;
+        
+    }
+
+    #ray-1{
+        top:-6vw;
+        left:calc(50% - 5px);
+    }
+
+    #ray-2{
+        transform: rotate(45deg);
+        top:0vw;
+        left: 22.3375vw;
+    }
+
+    #ray-3{
+        transform:rotate(90deg);
+        top: calc(50% - 5px);
+        left: 26vw;
+    }
+
+    #ray-4{
+        transform:rotate(135deg);
+        top: 22.677vw;
+        left: 19.3388vw;
+    }
+
+    #ray-5{
+        top:26vw;
+        left:calc(50% - 5px);
+    }
+    
+    #ray-6{
+        transform:rotate(45deg);
+        top: 23.338vw;
+
+    }
+
+    #ray-7{
+        transform:rotate(90deg);
+        top: calc(50% - 5px);
+        left: -7vw;
+    }
+
+    #ray-8{
+        transform:rotate(135deg);
+        left:-5vw;
+        top:calc(1.57vw - 5px);
+    }
+
+.forecast-bar{
+    position:relative;
+}
+
+.forecast-box{
+    width:250px;
+    height:250px;
+    display:inline-block;
+    margin:-2px;
+    border:0px;
+    padding:0px;
+    position:relative;
+   
+    /* border:1px solid black; */
+    left:0px;
+    text-align:center;
+
+}
+
+
+.time, .temp{
+    font-family: "brevia", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:14pt;
+    
+    position:absolute;
+    left:50%;
+    transform:translate(-50%, 0);
+}
+
+.time{
+    top:10%;
+    color:rgb(72, 72, 72);
+}
+
+.temp{
+    bottom:5%;
+    color:whitesmoke;
+}
+
+.overcast{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:10vw;
+    height:10vw;
+}
+
+.overcast .sun{
+    width: 4.5vw;
+    height:4.5vw;
+    border-radius:50%;
+    background-color:rgb(255, 224, 23);
+    position:absolute;
+    left:40%;
+    top:10%;
+  
+}
+    .cloud{
+    position:absolute;
+    transform:scale(0.35, 0.3);
+    top:70%;
+    }
+    .cloud-left{
+    position:absolute;
+    width:20vw;
+    height:15vw;
+    background-color:whitesmoke;
+    border-radius:100px 150px 0 40px;
+    bottom:0px;
+    }
+
+    .cloud-right{
+    position:absolute;
+    width: 10vw;
+    height:10vw;
+    background-color:whitesmoke;
+    border-radius:150px 100px 100px 0px;
+    left:19vw;
+    bottom:0px;
+    }
+
+.cloudy{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:10vw;
+    height:10vw;
+}
+
+.raining{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:10vw;
+    height:10vw;
+}
+
+    .rain-box{
+        bottom:0;
+        position:absolute;
+        left:45%;
+        transform:translate(-50%, 0);
+        width:100%;
+        height:30%;
+    }
+        .rain{
+            width:15%;
+            height:100%;
+            border-right:4px solid rgb(0, 89, 255);
+            display:inline-block;
+            top:50%
+        }
+
+.thunder{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:10vw;
+    height:10vw;
+}
+
+
+.lightning{
+    position:absolute;
+    transform:scale(.12);
+    top:120%;
+    left:20%;
+}
+#lightning-top{
+    width:40px;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-top: 250px solid yellow;
+    bottom:260px;
+    position:absolute;
+    transform:skew(-20deg);
+    left: calc(50% + 40px);
+   }
+
+   #lightning-middle{
+    width:142px;
+    height:15px;
+    border-radius: 0 10px 0 10px;
+    transform:skew(-20deg);
+    background-color:yellow;
+    position:absolute;
+    bottom:245px;
+    left: calc(50% + 42px);
+   }
+
+   #lightning-bottom{
+    width:5px;
+    height:0;
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+    border-top: 200px solid yellow;
+    position:absolute;
+    transform:skew(-20deg);
+    bottom: 45px;
+    left:calc(50% + 60px);
+   }
+
+@media screen and (max-width:400px){
+
+    .forecast-box{
+        width:50vw;
+        height:50vw;
+    }
+
+    .current-weather{
+        width:60vw;
+        height:40vw;
+        left: 20vw;
+    }
+
+    .sunny{
+        transform:scale(1.5, 1.5);
+        left:calc(50% - 12.5vw);
+        top:calc(50% - (1.5 * 12.5vw));
+    }
+}
+
+@media screen and (min-width:1350px){
+    .forecast-bar{
+        left:calc(50vw - 625px);
+    }
+
+    .thunder .cloud{
+        top:50%;
+    }
+
+    .lightning{
+        top:100%;
+        left:30%;
+        transform: scale(.2);    }
+
+}
+
+@media screen and (max-width:500px){
+    .forecast-box{
+        width:50vw;
+        height:50vw;
+    }
+}
