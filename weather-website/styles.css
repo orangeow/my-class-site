@@ -383,4 +383,8 @@ h1{
         background-color:transparent;
     }
 
+    .time , .zip{
+       color: whitesmoke;
+    }
+
     }
