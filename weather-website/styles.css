@@ -344,6 +344,7 @@ h1{
         left:calc(50% - 12.5vw);
         top:calc(50% - (1.5 * 12.5vw));
     }
+
 }
 
 @media screen and (min-width:1350px){
@@ -367,4 +368,19 @@ h1{
         width:50vw;
         height:50vw;
     }
-}
+
+    body{
+        filter:invert(1);
+        background-image:linear-gradient(rgb(220, 235, 255), rgb(14, 131, 249));
+    }
+
+    .sunny .ray{
+        display:none;
+    }
+
+    .sunny{
+         box-shadow: 25px 10px 0px 0px rgb(255, 208, 0); 
+        background-color:transparent;
+    }
+
+    }
