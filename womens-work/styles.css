@@ -1,0 +1,251 @@
+body{
+    background-color:black;
+}
+
+.container{
+    display:flex;
+    width: 90vw;
+    left: calc(50% - 45vw);
+    flex-wrap:wrap;
+    position:relative;
+}
+
+.cell-big{
+    width: calc(90vw / 14);
+    height: calc(90vw / 14);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.circle{
+    background-color: magenta;
+    transition:500ms;
+}
+
+.baby-block{
+    background-color:orange;
+    width: 50%;
+    height:50%;
+    border-radius:50%;
+}
+
+.triangle{
+    background-color:orange;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.position-1{
+        width:0;
+        height:0;
+        border-left:calc(90vw / 28) solid transparent;
+        border-right:calc(90vw / 28) solid transparent;
+        border-bottom:calc(90vw / 28) solid red;
+        transform:rotate(180deg);
+}
+.position-2{
+        width:0;
+        height:0;
+        border-left:calc(90vw / 28) solid transparent;
+        border-right:calc(90vw / 28) solid transparent;
+        border-bottom:calc(90vw / 28) solid red;
+}
+
+.column{
+    display:flex;
+    width: calc(90vw / 7);
+    flex-wrap:wrap;
+}
+
+
+.text-container{
+    width: calc(5 * (90vw / 7));
+    height: calc(4.75 * (90vw / 14));
+    background-color:rgb(251, 163, 216);
+    display:flex;
+    padding-top: calc(.75 * (90vw / 14));
+    padding-bottom: calc(.5 * (90vw / 14));
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.cell-small{
+    width: calc(90vw / 56);
+    height: calc(90vw / 56);
+}
+
+.fill{
+    background-color:red;
+}
+
+.womens{
+    display:flex;
+    width: calc(9 * (90vw / 14) );
+    height:calc(90vw / 7);
+    justify-content:space-around;
+    align-items:flex-end;
+}
+.W{
+    display:flex;
+    width: calc(9 * (90vw / 56));
+    height: calc(8 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+.o{
+    display:flex;
+    width: calc(4 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+.m{
+    display:flex;
+    width: calc(5 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+.e{
+    display:flex;
+    width: calc(4 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+
+.ns{
+    display:flex;
+    flex-wrap:wrap;
+    height: calc(8 * (90vw / 56));
+    width: calc(10 * (90vw / 56));
+    justify-content:space-between;
+    
+}
+
+.n{
+    display:flex;
+    width: calc(5 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+   
+}
+
+.apostrophe{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.s{
+    display:flex;
+    width: calc(4 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+  
+}
+
+
+.text-2{
+    width: calc(17 * (90vw / 28));
+    height:calc(90vw / 7);
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
+
+.work{
+    display:flex;
+    width: calc(3 * (90vw / 7) );
+    height:calc(90vw / 7);
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.r{
+    display:flex;
+    width: calc(4 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+.k{
+    display:flex;
+    width: calc(4 * (90vw / 56));
+    height: calc(5 * (90vw / 56));
+    flex-wrap:wrap;
+}
+
+/* .decorative-triangle{
+    width: 0;
+    height: 0;
+    border-top: calc(2.5 * (90vw / 56)) solid transparent;
+    border-left: calc(2.5 * (90vw / 56)) solid red;
+    border-bottom: calc(2.5 * (90vw / 56)) solid transparent;
+} */
+
+.pixel-flower{
+    display:flex;
+    flex-wrap:wrap;
+    width: calc(3 * (90vw / 56));
+    height: calc(3 * (90vw / 56));
+    padding-top: calc(2 * (90vw / 56));
+}
+
+.position-right{
+    transform:rotate(180deg);
+}
+
+.middle{
+    width: calc(90vw / 56);
+    height: calc(90vw / 56);
+}
+
+.top-bottom{
+    width: calc(90vw / 56);
+    height: calc(90vw / 56);
+}
+
+.side{
+    width: calc(90vw / 56);
+    height: calc(90vw / 56);
+}
+/* hover effects!! */
+
+.circle:hover {
+    border-radius:50%;
+}
+
+.triangle:hover{
+    background-color:red;
+}
+
+.triangle:hover .position-1, .triangle:hover .position-2{
+    border-bottom:calc(90vw / 28) solid orange;
+}
+
+/* .pixel-flower:hover{
+    transform: rotate(45deg);
+} */
+
+.pixel-flower:hover .middle{
+    width: calc(90vw / 28);
+    height: calc(90vw / 28);
+}
+
+.pixel-flower:hover .top-bottom{
+    width: calc(90vw / 28);
+    height: calc(90vw / 56);
+}
+
+.pixel-flower:hover .side{
+    width: calc(90vw / 56);
+    height: calc(90vw / 28);
+}
+
+.pixel-flower:hover{
+    width: calc(4 * (90vw / 56));
+    height: calc(4 * (90vw / 56));
+}
