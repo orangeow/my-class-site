@@ -1,4 +1,4 @@
-#title{
+/* #title{
     display:block;
     font-family: "ff-providence-sans-web-pro", sans-serif;
     font-weight: 700;
@@ -6,20 +6,82 @@
     font-size:72px;
     margin:auto;
     text-align:center;
+} */
+
+.button-box{
+    
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    
+    /* justify-content:space-around; */
+    top:-50vh;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /* top:50vh; */
+    /* border:1px solid black; */
+    width:70vw;
+    height:70vh;
+    align-content:center;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+.button{
+    /* display:flex;
+    flex-wrap:wrap; */
+    margin: 3vw;
+    background-color:rgb(20, 47, 114);
+    border:7px solid rgb(10, 23, 55);
+    border-radius:50%;
+    width:130px;
+    height:130px;
+    /* filter:drop-shadow(0 0 0.25rem black); */
+}
+
+.button-inside{
+    width: 80px;
+    height: 80px;
+    display:flex;
+    justify-content:space-between;
+
+    position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    flex-wrap:wrap;
+}
+
+.button-hole{
+    width:22px;
+    height:22px;
+    margin-top:10px;
+
+    margin-left:5px;
+    margin-right:5px;
+    background-color: rgb(10, 23, 55);
+    border-radius: 50%;
 }
 
 .sections{
-    display:inline-block;
-    font-family: "ff-providence-sans-web-pro", sans-serif;
+    /* display:inline-block; */
+    font-family: "buena-park-jf", serif;
     font-weight: 400;
     font-style: normal;
-    font-size:30px;
-    color:red;
-    background-color:paleturquoise;
-    display:inline-block;
-    margin-top:20px;
+    /* font-family: "ff-providence-sans-web-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-size:80px;
+    color:rgb(206, 140, 0);
+    text-align:center;
+    opacity:0%;
+    position:relative;
+    top:-140px;
+    
+    /* margin-top:20px;
     margin-bottom:20px;
-    margin-left:220px;
+    margin-left:220px; */
 }
 
 .assignment-links{
@@ -29,21 +91,87 @@
     font-size:18px;
     color:gray;
     background-color:yellow;
-    display:inline-block;
-    margin-top:2px;
-    margin-left:250px;
-}
-
-body{
-    background-color:rgb(250, 241, 215);
+    /* display:inline-block; */
+    /* margin-top:2px;
+    margin-left:250px; */
 }
 
 a{
     text-decoration:none;
 }
 
-body{
+/* body{
     background-image:url(background-01.png);
     background-size:cover;
     background-repeat:repeat-y;
+} */
+
+/* .big-container{
+    width:100vw;
+    display:flex;
+    flex-wrap:nowrap;
+} */
+
+body{
+    background-color:rgb(46, 58, 25);
+    /* overflow:hidden; */
+}
+
+.big-container{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    top:-1vh;
+}
+
+
+.rows{
+    top:-100vh;
+    left:-0.5vw;
+}
+
+.white{
+    background-color:white;
+}
+
+.column-skinny{
+    width:calc(100vw / 46);
+    height:100vh;
+}
+
+.row-skinny{
+    height:calc(100vh / 23);
+    width:100vw;
+}
+
+.column-big{
+    width:calc(100vw / 23);
+    height:100vh;
+}
+
+.row-big{
+    height:calc(100vh / 11.5);
+    width:100vw;
+}
+
+.fill1{
+    background-color:rgb(255, 140, 0);
+    opacity:60%;
+}
+
+.fill2{
+    background-color:rgb(255, 64, 0);
+    opacity:60%;
+}
+
+.button:hover .sections{
+    opacity:100%;
 }
