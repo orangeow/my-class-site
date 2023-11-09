@@ -20,7 +20,7 @@
     transform:translate(-50%, -50%);
     /* top:50vh; */
     /* border:1px solid black; */
-    width:70vw;
+    width:90vw;
     height:70vh;
     align-content:center;
     justify-content:space-around;
@@ -114,7 +114,7 @@ a{
 
 body{
     background-color:rgb(46, 58, 25);
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 .big-container{
