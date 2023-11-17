@@ -20,10 +20,27 @@
                 <div id="petal-container"></div>
                 <div id="center"></div>
             </div>
-            
             <div id="words">New York Public Library</div>
         </div>
-       
+
+        <div id="controls">
+            <div class="slider-box">
+                <input type="range" id="petal-color" min="0" max="2" value="1" oninput="petalColor()">
+                <p class="slider-label">Petal Color</p>
+            </div>  
+
+            <div class="slider-box">
+                <input type="range" id="center-color" min="0" max="2" value="0" oninput="centerColor()">
+                <p class="slider-label">Center Color</p>
+            </div>
+
+            <div class="slider-box">
+                <input type="range" id="user-bouba" min="0" max="100" value="45" oninput="boubaFunction()">
+                <p class="slider-label">Roundness</p>
+            </div>
+
+            <input type="button" id="randomize" value="Randomize" onclick="randomize()">
+        </div>
 
         <script src="script.js" async defer></script>
     </body>
