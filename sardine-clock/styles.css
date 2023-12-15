@@ -1,0 +1,57 @@
+#tin-container{
+    position:relative;
+    display:block;
+    left:20vw;
+    top:10vh;
+}
+
+#tin-bottom{
+    position:absolute;
+    display:block;
+    width:60vw;
+    height:auto;
+  }
+
+#fishes{
+    position:absolute;
+    display:block;
+    width:60vw;
+}
+
+.fish{
+    position:absolute;
+    display:block;
+    width:60vw;
+    height:auto;
+}
+  
+  #tin-top{
+    position:absolute; 
+    display:block; 
+    width:60%;
+    height:auto;
+  }
+  
+body{
+    background-image: url(sardine-background.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+@media screen and (max-width:400px){
+    #tin-container{
+      top:35vh;
+      width:98vw;
+      transform: rotate(-90deg);
+      left:-40%;
+    }
+    #tin-top{
+        width:98vw;
+    }
+    #tin-bottom{
+        width:98vw;
+    }
+    .fish{
+        width:98vw;
+    }
+}

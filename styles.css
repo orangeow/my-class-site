@@ -17,7 +17,6 @@
     /* justify-content:space-around; */
     
     left:50%;
-    bottom:100vh;
     transform:translate(-50%, 0%);
     /* top:50vh; */
     /* border:1px solid black; */
@@ -32,7 +31,7 @@
     /* display:flex;
     flex-wrap:wrap; */
     margin: 3vw;
-    background-color:rgb(20, 47, 114);
+    background-color:rgb(50, 47, 114);
     border:7px solid rgb(10, 23, 55);
     border-radius:50%;
     width:130px;
@@ -113,7 +112,7 @@ a{
 } */
 
 body{
-    background-color:rgb(46, 58, 25);
+    background-color:rgb(5, 12, 28);
     background-repeat:repeat-y;
 }
 
