@@ -31,6 +31,9 @@ function secondTicker(){
 
 setInterval(secondTicker, 1000);
 
+// thisHour = 8;
+// thisMinute = 0;
+
   if ((thisHour==8 && thisMinute < 5) || (thisHour==18 &&     thisMinute < 5)){
     purr.style.display = "none";
     document.body.style.backgroundColor = "#F91E19";
@@ -40,4 +43,15 @@ setInterval(secondTicker, 1000);
     for(let letter of meowLetters){
       meow.innerHTML += letter;
     }
+
+    meow.onclick = function(){
+      meow.style.display = "none";
+      purr.style.display = "flex";
+      document.body.style.backgroundColor = "#E5A72F";
+    }
+  } else{
+    purr.style.display = "flex";
+    meow.style.display = "none";
+    document.body.style.backgroundColor = "#E5A72F";
   }
+
