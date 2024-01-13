@@ -38,8 +38,6 @@ if((thisHour == 5 && thisMinute >= 45) || (thisHour == 10 && thisMinute > 15 && 
     fishes.innerHTML = "<img class='fish' src='sardines-0.png'>";
   }
 
-  console.log(fishes);
-
 }
 
 setInterval(rushHourMeter, 1000);

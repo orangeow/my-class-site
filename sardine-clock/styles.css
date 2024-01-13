@@ -1,7 +1,7 @@
 #tin-container{
     position:relative;
     display:block;
-    left:20vw;
+    left:18vw;
     top:10vh;
 }
 
@@ -38,20 +38,20 @@ body{
     background-repeat: repeat-y;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:425px){
     #tin-container{
-      top:35vh;
+      top:75vw;
       width:98vw;
       transform: rotate(-90deg);
       left:-40%;
     }
     #tin-top{
-        width:98vw;
+        width:100vw;
     }
     #tin-bottom{
-        width:98vw;
+        width:100vw;
     }
     .fish{
-        width:98vw;
+        width:100vw;
     }
 }
